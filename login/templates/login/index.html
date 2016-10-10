@@ -1,5 +1,12 @@
-<ul>
-	{% for usuario in all_usuario %}
-	<li><a href="/login/{{ usuario.id }}/">{{ usuario.nome }}</a></li>
-	{% endfor %}
-</ul>
+<!--
+{%  %} para códigos em python (django)
+{{ }} para variáveis plenas
+-->
+{% if all_usuario %}
+	<ul>
+		{% for usuario in all_usuario %}
+		<li><a href="/login/{{ usuario.id }}/">{{ usuario.nome }}</a></li>
+		{% endfor %}
+	</ul>
+{% else %}
+	<h3>Sem usuarios</h3>
