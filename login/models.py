@@ -1,3 +1,4 @@
+# com qualquer mudanca feita nas classes que afetam as tabelas, deve ser feito o makemigrations e migrate e sincronizar com a base de dados
 from django.db import models
 
 class calendario(models.Model):
