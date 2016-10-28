@@ -15,7 +15,8 @@
     GENERAL STYLES
 ==================================================*/
 body {
-           font-family: 'Ruluko', sans-serif;
+    height:100%;
+    font-family: 'Ruluko', sans-serif;
     font-size:14px;
 }
 
@@ -77,6 +78,8 @@ p {
 
   /* Good browsers */
   opacity: 0.9;
+  
+  
 }
 
 section {
@@ -84,6 +87,11 @@ section {
     padding-bottom:40px;
 }
 
+.geral {
+	min-height:100%;
+	position:relative;
+	width:800px;
+}
 
 /*=======================================
     COLOR CODES
@@ -176,5 +184,8 @@ margin-bottom:20px;
     color:#fff;
     padding:20px 50px 20px 50px;
     text-align:right;
+    position:absolute;
+	bottom:0;
+	width:100%;
 }
 
