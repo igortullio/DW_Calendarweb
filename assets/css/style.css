@@ -180,6 +180,7 @@ margin-bottom:20px;
 ==================================================*/
 
 #footer    {
+    clear: both;
     background-color:#000;
     color:#fff;
     padding:20px 50px 20px 50px;
