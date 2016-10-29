@@ -61,7 +61,7 @@
                         </li>
                         <li><a href="login.html">LOGIN</a>
                         </li>
-                        <li><a href="cadastro.html">CADASTRAR</a>
+                        <li><a href="calendario.html">CALENDÁRIO</a>
                         </li>
                         
                     </ul>
@@ -72,18 +72,29 @@
         </nav>
         <!-- Fim Navegação -->
     
-        <!-- Seção Login -->
+        <!-- Seção Cadastrar -->
         <div class="container">
     
-            <form class="form-signin">
-                <h2 class="form-signin-heading">Login</h2>
-                <input class="input-block-level" placeholder="Endereço de email" type="text" />
+            <form class="form-signup">
+                <h2 class="form-signin-heading">Cadastrar</h2>
+                
+                <h2><small>Nome de usuário</small></h2>
+                <input class="input-block-level" placeholder="Nome" type="text" />                
+                
+                <h2><small>Email</small></h2>
+                <input class="input-block-level" placeholder="user@myemail.com" type="text" />
+                
+                <h2><small>Senha</small></h2>
                 <input class="input-block-level" placeholder="Senha" type="password" />
+                
+                <h2><small>Senha novamente</small></h2>
+                <input class="input-block-level" placeholder="Senha" type="password" />
+                
                 <label class="checkbox">
-            <input value="remember-me" type="checkbox" /> Lembrar-me
-            </label>
-                <button class="btn btn-large btn-primary" type="submit">Entrar</button>
-                <button class="btn btn-large btn-primary" type="submit" formaction="cadastro.html">Cadastrar</button>
+                    <input value="aceitaTermos" type="checkbox" /> Concordo com os termos de uso.
+                </label>
+                
+                <button class="btn btn-large btn-primary" type="submit">Cadastrar</button>
             </form>
     
         </div>
