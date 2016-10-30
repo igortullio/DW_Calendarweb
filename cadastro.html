@@ -13,6 +13,7 @@
     <!-- BOOTSTRAP CORE STYLE CSS -->
     <link href="assets/css/bootstrap.css" rel="stylesheet" />
     <link href="assets/css/font-awesome.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
     <!-- STYLE CSS CUSTOMIZADO -->
     <link href="assets/css/style.css" rel="stylesheet" type="text/css" media="screen" />
     <link href='http://fonts.googleapis.com/css?family=Ruluko' rel='stylesheet' type='text/css' />
@@ -56,11 +57,14 @@
             <!-- Coleta os nav links para troca (toggling) -->
             <div class="collapse navbar-collapse navbar-ex1-collapse">
                 <ul class="nav navbar-nav navbar-right">
-                    <li><a href="index.html">INÍCIO</a>
+                    <!-- HOME -->
+                    <li><a href="index.html"><i class="fa fa-home"></i> HOME </a>
                     </li>
-                    <li><a href="login.html">LOGIN</a>
+                    <!-- LOGIN -->
+                    <li><a href="login.html"><i class="fa fa-sign-in"></i> LOGIN</a>
                     </li>
-                    <li><a href="calendario.html">CALENDÁRIO</a>
+                    <!-- MEU CALENDÁRIO -->
+                    <li><a href="calendario.html"><i class="fa fa-calendar"></i> MEU CALENDÁRIO</a>
                     </li>
                     
                 </ul>
@@ -78,22 +82,22 @@
             <h2 class="form-signin-heading">Cadastrar</h2>
             
             <h2><small>Nome de usuário</small></h2>
-            <input class="input-block-level" placeholder="Nome" type="text" />                
+            <input class="form-control" required="required" placeholder="Nome" type="text" />                
             
             <h2><small>Email</small></h2>
-            <input class="input-block-level" placeholder="user@myemail.com" type="text" />
+            <input class="form-control" required="required" placeholder="user@myemail.com" type="text" />
             
             <h2><small>Senha</small></h2>
-            <input class="input-block-level" placeholder="Senha" type="password" />
+            <input class="form-control" required="required" placeholder="Senha" type="password" />
             
             <h2><small>Senha novamente</small></h2>
-            <input class="input-block-level" placeholder="Senha" type="password" />
+            <input class="form-control" required="required" placeholder="Senha" type="password" />
             
             <label class="checkbox">
-                <input value="aceitaTermos" type="checkbox" /> Concordo com os termos de uso.
+                <input required="required" value="aceitaTermos" type="checkbox" /> Concordo com os termos de uso.
             </label>
             
-            <button class="btn btn-large btn-primary" type="submit">Cadastrar</button>
+            <button class="btn btn-large btn-primary" type="submit"><i class="fa fa-user-plus"></i> Cadastrar</button>
         </form>
 
     </div>
@@ -101,8 +105,7 @@
     
     <!--Seção rodapé -->
     <div class="for-full-back " id="footer">
-        2016 www.yourdomain.com | All Right Reserved
-
+        <a href="www.calendarweb.pe.hu">www.calendarweb.pe.hu</a> &copy; Copyright 2016 Igor Túllio & Pedro Paul | All Right Reserved
     </div>
     <!--Fim Seção rodapé -->
 

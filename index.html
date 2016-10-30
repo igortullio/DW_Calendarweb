@@ -19,6 +19,7 @@
     <!-- BOOTSTRAP CORE STYLE CSS -->
     <link href="assets/css/bootstrap.css" rel="stylesheet" />
     <link href="assets/css/font-awesome.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
     <!-- STYLE CSS CUSTOMIZADO -->
     <link href="assets/css/style.css" rel="stylesheet" type="text/css" media="screen" />
     <link href='http://fonts.googleapis.com/css?family=Ruluko' rel='stylesheet' type='text/css' />
@@ -46,13 +47,16 @@
             <!-- Coleta os nav links para troca (toggling) -->
             <div class="collapse navbar-collapse navbar-ex1-collapse">
                 <ul class="nav navbar-nav navbar-right">
-                    <li><a href="calendario.html">CALENDÁRIO</a>
+                    <!-- MEU CALENDÁRIO -->
+                    <li><a href="calendario.html"><i class="fa fa-calendar"></i> MEU CALENDÁRIO</a>
                     </li>
-                    <li><a href="login.html">LOGIN</a>
+                    <!-- LOGIN -->
+                    <li><a href="login.html"><i class="fa fa-sign-in"></i> LOGIN</a>
                     </li>
-                    <li><a href="cadastro.html">CADASTRAR</a>
+                    <!-- CADASTRAR -->
+                    <li><a href="cadastro.html"><i class="fa fa-user-plus"></i> CADASTRAR</a>
                     </li>
-                    
+
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
@@ -61,46 +65,50 @@
     </nav>
     <!-- Fim Navegação -->
 
-    
+
     <!--Seção do Cabeçalho  -->
     <div class="container" id="home">
-        <div class="row text-center ">
-            <div class="col-md-3 head-main ">
-            
-                <a href="#home">
-                    <i class="fa fa-bell color-blue "></i>
+        <div class="row text-center">
+        
+            <div class="col-sm-3 head-main">
+
+                <a href="#about">
+                    <i class="fa fa-info-circle color-blue "></i>
                 </a>
-                <h3> <a href="#home">INÍCIO</a></h3>
+                <h3> <a href="#about">SOBRE</a></h3>
 
             </div>
             
-            <div class="col-md-3 head-main">
-
-                <a href="#services">
-                    <i class="fa fa-globe color-blue "></i>
+            <div class="col-sm-3 head-main">
+                
+                <a href="#tools">
+                    <i class="fa fa-cubes color-blue"></i>
                 </a>
-                <h3> <a href="#services">SERVIÇOS</a></h3>
-
+                <h3>
+                    <a href="#tools">FERRAMENTAS</a>
+                </h3>
+                
             </div>
-            <div class="col-md-3 head-main">
             
-                <a href="#contact">
-                    <i class="fa fa-headphones color-blue"></i>
-                </a>
-                <h3> <a href="#contact">CONTATO</a></h3>
+            <div class="col-sm-3 head-main">
 
+                <a href="#howuse">
+                    <i class="fa fa-calendar color-blue"></i>
+                </a>
+                <h3> <a href="#howuse">COMO USAR</a></h3>
+                
             </div>
         </div>
     </div>
     <!--Fim Seção do Cabeçalho -->
 
-    <!--Seção SERVIÇOS-->
-    <section class="for-full-back color-white" id="services">
+    <!--Seção SOBRE-->
+    <section class="for-full-back color-white" id="about">
         <div class="container">
 
             <div class="row text-center">
                 <div class="col-md-8 col-md-offset-2">
-                    <h1>NOSSOS SERVIÇOS</h1>
+                    <h1>About</h1>
                     <h4>
                         <strong>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                         Curabitur nec nisl odio. Mauris vehicula at nunc id posuere.
@@ -168,16 +176,15 @@
 
     <!--Fim Seção SERVIÇOS-->
 
-    <!-- Seção LIVRE -->
+    <!-- Seção Ferramentas -->
 
-    <section class="for-full-back color-light " id="free-text">
+    <section class="for-full-back color-light " id="tools">
         <div class="container">
             <div class="row text-center">
                 <div class="col-md-8 col-md-offset-2">
-                    <h1>FREE TEXT SECTION</h1>
+                    <h1>Ferramentas</h1>
                     <h4>
-                        <strong>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Curabitur nec nisl odio. Mauris vehicula at nunc id posuere.
+                        <strong>Nossos serviços são constituinte das seguintes funções 
                         </strong>
                     </h4>
                 </div>
@@ -213,8 +220,8 @@
     </section>
     <!--Fim Seção LIVRE -->
 
-    <!-- Seção CONTATO -->
-    <section class="for-full-back color-white " id="contact">
+    <!-- Seção Como Usar -->
+    <section class="for-full-back color-white " id="howuse">
         <div class="container">
             <div class="row text-center">
                 <div class="col-md-8 col-md-offset-2">
@@ -226,7 +233,7 @@
                     </h4>
                 </div>
 
-            </div>
+            </div> <!-- fim da primeira linha -->
 
             <div class="row">
                 <div class="col-md-5 contact-cls">
@@ -245,8 +252,8 @@
                         <button type="submit" class="btn btn-primary">Requestb Quotation</button>
                     </div>
 
-                </div>
-                <div class="col-md-7">
+                </div> <!-- fim conteudo da parte esquerda -->
+                <div class="col-md-6">
                     <h2>Lorem ipsum dolor sit amet</h2>
                     <p>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nec nisl odio. Mauris vehicula at nunc id posuere. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nec nisl odio. Mauris vehicula at nunc id posuere.
@@ -265,7 +272,7 @@
                                     <input type="text" class="form-control" required="required" placeholder="Email address">
                                 </div>
                             </div>
-                        </div>
+                        </div> <!-- fim primeira parte do form -->
                         <div class="row">
                             <div class="col-md-12 col-sm-12">
                                 <div class="form-group">
@@ -275,20 +282,19 @@
                                     <button type="submit" class="btn btn-default">Submit Request</button>
                                 </div>
                             </div>
-                        </div>
+                        </div> <!-- fim segunda parte do form -->
                     </form>
-                </div>
+                </div> <!-- fim do conteudo da parte direita -->
 
-            </div>
-        </div>
+            </div> <!-- fim da segunda linha -->
+        </div> <!-- fim do container -->
     </section>
 
     <!--Fim Seção CONTATO -->
 
     <!--Seção rodapé -->
     <div class="for-full-back " id="footer">
-        2016 www.yourdomain.com | All Right Reserved
-
+        <a href="www.calendarweb.pe.hu">www.calendarweb.pe.hu</a> &copy; Copyright 2016 Igor Túllio & Pedro Paul | All Right Reserved
     </div>
     <!--Fim Seção rodapé -->
 
