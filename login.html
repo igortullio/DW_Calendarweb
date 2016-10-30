@@ -1,124 +1,136 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 
-<head>
-    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
-    <meta charset="utf-8" />
-    <title>Login CalendarWeb</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-    <meta name="description" content="O usuario devera logar no sistema para que consiga acessar sua conta e utilizar o site" />
-    <meta name="author" content="Pedro Paul" />
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+        <meta charset="utf-8" />
+        <title>Login CalendarWeb</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+        <meta name="description" content="O usuario devera logar no sistema para que consiga acessar sua conta e utilizar o site" />
+        <meta name="author" content="Pedro Paul" />
 
-    <!--STYLE SHEETS REQUIRIDOS-->
-    <!-- BOOTSTRAP CORE STYLE CSS -->
-    <link href="assets/css/bootstrap.css" rel="stylesheet" />
-    <link href="assets/css/font-awesome.min.css" rel="stylesheet" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
-    <!-- STYLE CSS CUSTOMIZADO -->
-    <link href="assets/css/style.css" rel="stylesheet" type="text/css" media="screen" />
-    <link href='http://fonts.googleapis.com/css?family=Ruluko' rel='stylesheet' type='text/css' />
-    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
-    <![endif]-->
-    <!-- Le styles -->
-    <link href="login/style.css" type="text/css" rel="stylesheet" />
-    <link href="login/bootstrap-responsive.css" rel="stylesheet" />
+        <!--STYLE SHEETS REQUIRIDOS-->
+        <!-- BOOTSTRAP CORE STYLE CSS -->
+        <link href="assets/css/bootstrap.css" rel="stylesheet" />
+        <link href="assets/css/font-awesome.min.css" rel="stylesheet" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+        <!-- STYLE CSS CUSTOMIZADO -->
+        <link href="assets/css/style.css" rel="stylesheet" type="text/css" media="screen" />
+        <link href='http://fonts.googleapis.com/css?family=Ruluko' rel='stylesheet' type='text/css' />
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+          <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+          <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+        <![endif]-->
+        <!-- Le styles -->
+        <link href="login/style.css" type="text/css" rel="stylesheet" />
+        <link href="login/bootstrap-responsive.css" rel="stylesheet" />
 
-    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
-    <!--[if lt IE 9]>
-		<script src="../assets/js/html5shiv.js"></script>
-		<![endif]-->
+        <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+        <!--[if lt IE 9]>
+                    <script src="../assets/js/html5shiv.js"></script>
+                    <![endif]-->
 
-    <!-- Fav and touch icons -->
-    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://getbootstrap.com/2.3.2/assets/ico/apple-touch-icon-144-precomposed.png" />
-    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="http://getbootstrap.com/2.3.2/assets/ico/apple-touch-icon-114-precomposed.png" />
-    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="http://getbootstrap.com/2.3.2/assets/ico/apple-touch-icon-72-precomposed.png" />
-    <link rel="apple-touch-icon-precomposed" href="http://getbootstrap.com/2.3.2/assets/ico/apple-touch-icon-57-precomposed.png" />
-    <link rel="shortcut icon" href="http://getbootstrap.com/2.3.2/assets/ico/favicon.png" />
-    <link rel="stylesheet" type="text/css" id="SL_Style" href="login/translator.css" />
-</head>
+        <!-- Fav and touch icons -->
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://getbootstrap.com/2.3.2/assets/ico/apple-touch-icon-144-precomposed.png" />
+        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="http://getbootstrap.com/2.3.2/assets/ico/apple-touch-icon-114-precomposed.png" />
+        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="http://getbootstrap.com/2.3.2/assets/ico/apple-touch-icon-72-precomposed.png" />
+        <link rel="apple-touch-icon-precomposed" href="http://getbootstrap.com/2.3.2/assets/ico/apple-touch-icon-57-precomposed.png" />
+        <link rel="shortcut icon" href="http://getbootstrap.com/2.3.2/assets/ico/favicon.png" />
+        <link rel="stylesheet" type="text/css" id="SL_Style" href="login/translator.css" />
+    </head>
 
-<body>
+    <body>
 
-    <!-- Navegação -->
-    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <!-- Navegação -->
+        <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="index.html">CalendarWeb</a>
+                </div>
+                <!-- Coleta os nav links para troca (toggling) -->
+                <div class="collapse navbar-collapse navbar-ex1-collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <!-- HOME -->
+                        <li><a href="index.html"><i class="fa fa-home"></i> HOME </a>
+                        </li>
+                        <!-- LOGIN -->
+                        <li><a href="login.html"><i class="fa fa-sign-in"></i> LOGIN</a>
+                        </li>
+                        <!-- CADASTRAR -->
+                        <li><a href="cadastro.html"><i class="fa fa-user-plus"></i> CADASTRAR</a>
+                        </li>
+
+                    </ul>
+                </div>
+                <!-- /.navbar-collapse -->
+            </div>
+            <!-- /.container -->
+        </nav>
+        <!-- Fim Navegação -->
+
+        <!-- Seção Login -->
         <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
+
+            <form class="form-signin">
+                <h2 class="form-signin-heading">Login</h2>
+                <input class="form-control" required="required" placeholder="Endereço de email" type="text" />
+                <input class="form-control" required="required" placeholder="Senha" type="password" />
+                <label class="checkbox">
+                    <input value="remember-me" type="checkbox" /> Lembrar-me
+                </label>
+                <button class="btn btn-large btn-primary" type="submit">
+                    <i class="fa fa-sign-in"></i> Entrar
                 </button>
-                <a class="navbar-brand" href="index.html">CalendarWeb</a>
-            </div>
-            <!-- Coleta os nav links para troca (toggling) -->
-            <div class="collapse navbar-collapse navbar-ex1-collapse">
-                <ul class="nav navbar-nav navbar-right">
-                    <!-- HOME -->
-                    <li><a href="index.html"><i class="fa fa-home"></i> HOME </a>
-                    </li>
-                    <!-- LOGIN -->
-                    <li><a href="login.html"><i class="fa fa-sign-in"></i> LOGIN</a>
-                    </li>
-                    <!-- CADASTRAR -->
-                    <li><a href="cadastro.html"><i class="fa fa-user-plus"></i> CADASTRAR</a>
-                    </li>
-                    
-                </ul>
-            </div>
-            <!-- /.navbar-collapse -->
+                <a href="cadastro.html" class="btn btn-large btn-primary" role="button">
+                    <i class="fa fa-user-plus"></i> Cadastrar
+                </a>
+            </form>
+
         </div>
-        <!-- /.container -->
-    </nav>
-    <!-- Fim Navegação -->
+        <!-- Fim Seção Login -->
 
-    <!-- Seção Login -->
-    <div class="container">
+        <!--Seção rodapé -->
+        <div class="for-full-back" id="footer">
+            <a href="www.calendarweb.pe.hu">www.calendarweb.pe.hu</a> <i class="fa fa-copyright"></i> Copyright 2016 Igor Túllio & Pedro Paul | All Right Reserved
+        </div>
+        <!--Fim Seção rodapé -->
 
-        <form class="form-signin">
-            <h2 class="form-signin-heading">Login</h2>
-            <input class="form-control" required="required" placeholder="Endereço de email" type="text" />
-            <input class="form-control" required="required" placeholder="Senha" type="password" />
-            <label class="checkbox">
-                <input value="remember-me" type="checkbox" /> Lembrar-me
-            </label>
-            <button class="btn btn-large btn-primary" type="submit">
-                <i class="fa fa-sign-in"></i> Entrar
-            </button>
-            <a href="cadastro.html" class="btn btn-large btn-primary" role="button">
-                <i class="fa fa-user-plus"></i> Cadastrar
-            </a>
-        </form>
-        
-    </div>
-    <!-- Fim Seção Login -->
-    
-    <!--Seção rodapé -->
-    <div class="for-full-back " id="footer">
-        <a href="www.calendarweb.pe.hu">www.calendarweb.pe.hu</a> &copy; Copyright 2016 Igor Túllio & Pedro Paul | All Right Reserved
-    </div>
-    <!--Fim Seção rodapé -->
-    
-    <!-- Le javascript
-		================================================== -->
-    <!-- Colocados no final do documento para que então a página carregue mais rápido -->
-    <script src="login/jquery.js"></script>
-    <script src="login/bootstrap-transition.js"></script>
-    <script src="login/bootstrap-alert.js"></script>
-    <script src="login/bootstrap-modal.js"></script>
-    <script src="login/bootstrap-dropdown.js"></script>
-    <script src="login/bootstrap-scrollspy.js"></script>
-    <script src="login/bootstrap-tab.js"></script>
-    <script src="login/bootstrap-tooltip.js"></script>
-    <script src="login/bootstrap-popover.js"></script>
-    <script src="login/bootstrap-button.js"></script>
-    <script src="login/bootstrap-collapse.js"></script>
-    <script src="login/bootstrap-carousel.js"></script>
-    <script src="login/bootstrap-typeahead.js"></script>
+        <!-- Subir Tela-->
+        <a href="#" id="toTop">
+            <i class="fa fa-caret-up color-blue" style="font-size: 24px"></i> 
+        </a>
 
-</body>
+        <!-- Le javascript
+                    ================================================== -->
+        <!-- Colocados no final do documento para que então a página carregue mais rápido -->
+        <script src="login/jquery.js"></script>
+        <script src="login/bootstrap-transition.js"></script>
+        <script src="login/bootstrap-alert.js"></script>
+        <script src="login/bootstrap-modal.js"></script>
+        <script src="login/bootstrap-dropdown.js"></script>
+        <script src="login/bootstrap-scrollspy.js"></script>
+        <script src="login/bootstrap-tab.js"></script>
+        <script src="login/bootstrap-tooltip.js"></script>
+        <script src="login/bootstrap-popover.js"></script>
+        <script src="login/bootstrap-button.js"></script>
+        <script src="login/bootstrap-collapse.js"></script>
+        <script src="login/bootstrap-carousel.js"></script>
+        <script src="login/bootstrap-typeahead.js"></script>
+        <script src="assets/js/jquery.scroll.pack.js" type="text/javascript"></script>
+        <script src="assets/js/jquery-1.3.2.min.js" type="text/javascript"></script>
+        <script type="text/javascript">
+            $(function () {
+                $("#toTop").scrollToTop();
+            });
+        </script>
+
+    </body>
 
 </html>
