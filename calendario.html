@@ -19,7 +19,7 @@
         <!-- BOOTSTRAP CORE STYLE CSS -->
         <link href="assets/css/bootstrap.css" rel="stylesheet" />
         <link href="assets/css/font-awesome.min.css" rel="stylesheet" />
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
         <!-- STYLE CSS CUSTOMIZADO -->
         <link href="assets/css/style.css" rel="stylesheet" type="text/css" media="screen" />
         <link href='http://fonts.googleapis.com/css?family=Ruluko' rel='stylesheet' type='text/css' />
@@ -108,6 +108,15 @@
         <!-- Fim Navegação -->
 
         <!-- Seção Calendário -->
+        <form action="/">
+            <div class="row text-right">
+                <div class="col-md-10" style="padding-bottom: 5px">
+                    <input id=tags name=tags placeholder="Pesquisa..." size=25 type=text>
+                    <input name=commit style="display:none;" type=submit value=Search>
+                    <br>
+                </div>
+            </div>
+        </form>
         <div id='calendar'></div>
         <!-- Fim Seção Calendário -->
 
