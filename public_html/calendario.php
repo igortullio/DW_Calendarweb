@@ -58,6 +58,21 @@
                                 start: start,
                                 end: end
                             };
+                            
+                            // Insira aqui uma chamada AJAX para enviar os dados para o PHP
+                            var url = "/save-event.php";
+                            
+                            $.ajax({
+                              type: "POST",
+                              url: url,
+                              data: JSON.Stringfy(eventData),
+                              success: function () {
+                                  // Inserir aqui uma mensagem em caso de sucesso no envio da requisição HTTP
+                                  alert("Dados inseridos com sucesso no servidor");
+                              },
+                              dataType: "json"
+                            });
+                            
                             $('#calendar').fullCalendar('renderEvent', eventData, true); // stick? = true
                         }
                         $('#calendar').fullCalendar('unselect');
