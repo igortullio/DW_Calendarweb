@@ -36,8 +36,21 @@
         <script src='js/vendor/fullcalendar/lib/jquery.min.js'></script>
         <script src='js/vendor/fullcalendar/fullcalendar.min.js'></script>
         <script src='js/vendor/fullcalendar/locale-all.js'></script>
+        <?php 
+            // Código que carrega os eventos
+            $eventos = mysqli_connect();
+        
+            $eventos_json = array();
+            foreach ($eventos as $elm) {
+                array_push($eventos_json, $elm);
+            }
+        
+            // Aqui transforma para p formato JSON
+            $saida = json_encode($eventos_json);        
+        ?>
         <script>
             $(document).ready(function () {
+                           
                 $('#calendar').fullCalendar({
                     locale: 'pt-br',
                     header: {
@@ -79,8 +92,7 @@
                     },
                     editable: true,
                     eventLimit: true, // allow "more" link when too many events
-                    events: [
-                    ]
+                    events: <?php echo $saida ?>
                 });
 
             });
