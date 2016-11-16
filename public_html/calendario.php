@@ -36,63 +36,61 @@
         <script src='js/vendor/fullcalendar/lib/jquery.min.js'></script>
         <script src='js/vendor/fullcalendar/fullcalendar.min.js'></script>
         <script src='js/vendor/fullcalendar/locale-all.js'></script>
-        <?php 
-            // Código que carrega os eventos
-            $eventos = mysqli_connect();
-        
-            $eventos_json = array();
-            foreach ($eventos as $elm) {
-                array_push($eventos_json, $elm);
-            }
-        
-            // Aqui transforma para p formato JSON
-            $saida = json_encode($eventos_json);        
-        ?>
+
         <script>
             $(document).ready(function () {
                            
                 $('#calendar').fullCalendar({
+					
                     locale: 'pt-br',
+					
                     header: {
                         left: 'prev,next today',
                         center: 'title',
                         right: 'month'
                     },
-                    //defaultDate: '2016-02-06',
+					
+					events: 'eventos\\getEvents.php',
+					
                     navLinks: true, // can click day/week names to navigate views
+					
                     selectable: true,
+					
                     selectHelper: true,
+					
                     select: function (start, end) {
-                        var title = prompt('Título:');
+                        var title = prompt('Título do Evento:');
                         var eventData;
                         if (title) {
-                            eventData = {
+							eventData = {
                                 title: title,
                                 start: start,
                                 end: end
                             };
                             
-                            // Insira aqui uma chamada AJAX para enviar os dados para o PHP
-                            var url = "/save-event.php";
-                            
+								url: 'eventos\\addEvent.php',
                             $.ajax({
-                              type: "POST",
-                              url: url,
-                              data: JSON.Stringfy(eventData),
-                              success: function () {
-                                  // Inserir aqui uma mensagem em caso de sucesso no envio da requisição HTTP
-                                  alert("Dados inseridos com sucesso no servidor");
+								data: 'title='+ title+'&start='+ start +'&end='+ end,
+								type: "POST",                              
+								success: function () {
+                                // Inserir aqui uma mensagem em caso de sucesso no envio da requisição HTTP
+                                alert("Dados inseridos com sucesso no servidor");
                               },
                               dataType: "json"
                             });
+							
+                            $('#calendar').fullCalendar('renderEvent', eventData, true); // make the event "stick"
                             
-                            $('#calendar').fullCalendar('renderEvent', eventData, true); // stick? = true
                         }
                         $('#calendar').fullCalendar('unselect');
                     },
-                    editable: true,
+					
+                    editable: false, //Não é possível mudar um evento de posição
+					
                     eventLimit: true, // allow "more" link when too many events
-                    events: <?php echo $saida ?>
+					
+                    
+					
                 });
 
             });
