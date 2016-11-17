@@ -2,6 +2,10 @@
 
 	require_once "configuracao.php";
 	
+	session_start(); 
+	
+	ob_start();
+	
 ?>
 
 <html lang="pt-br">
@@ -157,7 +161,15 @@
 		if($query1 != 1){
 			echo "<script>alert('Login e/ou senha incorreto(s)'); history.back();</script>"; 
 		}else{
-			echo "<script>alert('ENTROU');</script>";				
+			$query = mysql_query("SELECT id_Usua FROM usuario WHERE login='$login1' AND senha='$senha'") or die(mysql_error());
+			$id_Usua = mysql_fetch_assoc($query);
+			
+			//session_start();
+			header("Location: ./areaUsuario/calendario.php");
+			$_SESSION["login"] = $login;
+			$_SESSION["senha"] = $senha;
+			$_SESSION["id_Usua"] = $id_Usua;			
+						
 		}
 		
 	}

@@ -17,11 +17,11 @@
         <title>CalendarWeb</title>
         <!--STYLE SHEETS REQUIRIDOS-->
         <!-- BOOTSTRAP CORE STYLE CSS -->
-        <link href="css/bootstrap.css" rel="stylesheet" />
-        <link href="css/font-awesome.min.css" rel="stylesheet" />
+        <link href="../css/bootstrap.css" rel="stylesheet" />
+        <link href="../css/font-awesome.min.css" rel="stylesheet" />
         <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
         <!-- STYLE CSS CUSTOMIZADO -->
-        <link href="css/style.css" rel="stylesheet" type="text/css" media="screen" />
+        <link href="../css/style.css" rel="stylesheet" type="text/css" media="screen" />
         <link href='http://fonts.googleapis.com/css?family=Ruluko' rel='stylesheet' type='text/css' />
         <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
         <!--[if lt IE 9]>
@@ -30,12 +30,12 @@
         <![endif]-->
 
         <!-- Importações do fullcalendar -->
-        <link href='js/vendor/fullcalendar/fullcalendar.css' rel='stylesheet' />
-        <link href='css/calendario-style.css' rel='stylesheet' />
-        <script src='js/vendor/fullcalendar/lib/moment.min.js'></script>
-        <script src='js/vendor/fullcalendar/lib/jquery.min.js'></script>
-        <script src='js/vendor/fullcalendar/fullcalendar.min.js'></script>
-        <script src='js/vendor/fullcalendar/locale-all.js'></script>
+        <link href='../js/vendor/fullcalendar/fullcalendar.css' rel='stylesheet' />
+        <link href='../css/calendario-style.css' rel='stylesheet' />
+        <script src='../js/vendor/fullcalendar/lib/moment.min.js'></script>
+        <script src='../js/vendor/fullcalendar/lib/jquery.min.js'></script>
+        <script src='../js/vendor/fullcalendar/fullcalendar.min.js'></script>
+        <script src='../js/vendor/fullcalendar/locale-all.js'></script>
 
         <script>
             $(document).ready(function () {
@@ -50,7 +50,7 @@
                         right: 'month'
                     },
 					
-		            events: 'eventos\\getEventos.php',
+			        events: 'eventos\\getEventos.php',
 					
                     navLinks: true, // can click day/week names to navigate views
 					
@@ -59,7 +59,33 @@
                     selectHelper: true,
 					
                     select: function (start, end) {
-                        window.alert('Se cadastre para adicionar eventos'); 
+                        var title = prompt('Título do Evento:');
+						
+                        var eventData;						
+						
+                        if (title) {		
+                            var start = moment(start).format();
+                            var end = moment(end).format();
+						
+			                eventData = {
+                                title: title,
+                                start: start,
+                                end: end
+                            };
+                            								
+                            $.ajax({
+                                url: 'eventos\\addEvento.php',
+                                data: 'title='+ title+'&start='+ start +'&end='+ end+'$id_Usua=' +$_SESSION["id_Usua"] ,
+                                type: "POST",								
+                                success: function () {
+									// Inserir aqui uma mensagem em caso de sucesso no envio da requisição HTTP
+                                    alert("Dados inseridos com sucesso no servidor");
+				                }
+                            });
+							
+                            $('#calendar').fullCalendar('renderEvent', eventData, true); // make the event "stick"                            
+                        }
+                        $('#calendar').fullCalendar('unselect');
                     },
 					
                     editable: false, //Não é possível mudar um evento de posição
@@ -94,11 +120,7 @@
                         <!-- MEU CALENDÁRIO -->
                         <li><a href="calendario.php"><i class="fa fa-calendar"></i> MEU CALENDÁRIO</a>
                         </li>
-                        <!-- LOGIN -->
-                        <li><a href="login.php"><i class="fa fa-sign-in"></i> LOGIN</a>
-                        </li>
-                        <!-- CADASTRAR -->
-                        <li><a href="cadastro.php"><i class="fa fa-user-plus"></i> CADASTRAR</a>
+						<li><a href="../login.php"></i> SAIR</a>
                         </li>
 
                     </ul>
