@@ -50,7 +50,7 @@
                         right: 'month'
                     },
 					
-					events: 'eventos\\getEvents.php',
+					events: 'eventos\\getEventos.php',
 					
                     navLinks: true, // can click day/week names to navigate views
 					
@@ -60,23 +60,27 @@
 					
                     select: function (start, end) {
                         var title = prompt('Título do Evento:');
-                        var eventData;
-                        if (title) {
+						
+                        var eventData;						
+						
+                        if (title) {		
+							var start = moment(start).format();
+							var end = moment(end).format();
+						
 							eventData = {
                                 title: title,
                                 start: start,
                                 end: end
                             };
-                            
-								url: 'eventos\\addEvent.php',
+                            								
                             $.ajax({
+								url: 'eventos\\addEvento.php',
 								data: 'title='+ title+'&start='+ start +'&end='+ end,
-								type: "POST",                              
+								type: "POST",								
 								success: function () {
-                                // Inserir aqui uma mensagem em caso de sucesso no envio da requisição HTTP
-                                alert("Dados inseridos com sucesso no servidor");
-                              },
-                              dataType: "json"
+									// Inserir aqui uma mensagem em caso de sucesso no envio da requisição HTTP
+									alert("Dados inseridos com sucesso no servidor");
+								}
                             });
 							
                             $('#calendar').fullCalendar('renderEvent', eventData, true); // make the event "stick"
