@@ -28,6 +28,9 @@
           <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
           <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
         <![endif]-->
+        <!-- Fav and touch icons -->
+        <link rel="shortcut icon" href="ico/calendar-icon-blue-18.png" />
+        <link rel="stylesheet" type="text/css" id="SL_Style" href="css/translator.css" />
     </head>
 
     <body>
@@ -56,58 +59,10 @@
                 </div>
                 <!-- /.navbar-collapse -->
 
-<!--                <div id="navbar" class="navbar-collapse collapse">
-                    <form class="navbar-form navbar-right" role="form">
-                        <div class="form-group">
-                            <input type="text" placeholder="Email" class="form-control">
-                        </div>
-                        <div class="form-group">
-                            <input type="password" placeholder="Password" class="form-control">
-                        </div>
-                        <button type="submit" class="btn btn-large btn-primary"><i class="fa fa-sign-in"></i> LOGIN</button>
-                    </form>
-                </div>/.navbar-collapse -->
-
             </div>
             <!-- /.container -->
         </nav>
         <!-- Fim Navegação -->
-
-        <!--Seção do Cabeçalho  -->
-        <div class="container" id="home">
-            <div class="row text-center">
-
-                <div class="col-sm-4 head-main">
-
-                    <a href="#about">
-                        <i class="fa fa-info-circle color-blue "></i>
-                    </a>
-                    <h3> <a href="#about">SOBRE</a></h3>
-
-                </div>
-
-                <div class="col-sm-4 head-main">
-
-                    <a href="#services">
-                        <i class="fa fa-cubes color-blue"></i>
-                    </a>
-                    <h3>
-                        <a href="#services">SERVIÇOS</a>
-                    </h3>
-
-                </div>
-
-                <div class="col-sm-4 head-main">
-
-                    <a href="#howuse">
-                        <i class="fa fa-calendar color-blue"></i>
-                    </a>
-                    <h3> <a href="#howuse">COMO USAR</a></h3>
-
-                </div>
-            </div>
-        </div>
-        <!--Fim Seção do Cabeçalho -->
 
         <!--Seção SOBRE-->
         <section class="for-full-back color-white" id="about">
@@ -116,7 +71,7 @@
                 <div class="row text-center">
                     <div class="col-md-8 col-md-offset-2">
                         <h1>Sobre</h1>
-                        <h4><strong>Busque, crie, organize eventos para compartilhar com quem quiser</strong></h4>
+                        <h4><strong>Crie e organize eventos para lembrar do que fazer!</strong></h4>
                     </div>
                 </div>
 
@@ -124,7 +79,8 @@
                     <div class="col-md-3">
                         <div class="about-div text-center">
                             <i class="fa fa-clock-o fa-4x color-blue"></i>
-                            <h3></h3>
+                            <h3>Torne a sua vida mais ágil e economize tempo ao 
+                            criar eventos</h3>
                         </div>
                     </div>
 
@@ -145,16 +101,16 @@
                             O CalendarWeb pretende ajudar as tanto pessoas que são 
                             organizadas quanto pessoas cronicamente 
                             desorganizadas a ter uma ferramenta simples para 
-                            administrar seu eventos podendo compartilha-los a 
-                            qualquer um.
+                            administrar seu eventos.
                         </p>
 
                     </div>
 
                     <div class="col-md-3">
                         <div class="about-div text-center">
-                            <i class="fa fa-envelope-o fa-4x color-blue"></i>
-                            <h3></h3>
+                            <i class="fa fa-archive fa-4x color-blue"></i>
+                            <h3>Guarde seus eventos em seu calendario para 
+                                administra-los em um só lugar</h3>
                         </div>
                     </div>
 
@@ -180,7 +136,18 @@
 
                 </div>
                 <div class="row text-center space-pad">
-                    <div class="col-md-4 ">
+                    
+                    <div class="col-md-6 ">
+
+                        <div class="free-div">
+                            <i class="fa fa-calendar color-blue" style="font-size: 72px"></i>
+                            <h3>Visualize seu calendadio</h3>
+                            <h4>Faça o cadastro e veja todos os seus eventos 
+                                pelo navegador</h4>
+                        </div>
+
+                    </div>
+                    <div class="col-md-6 ">
 
                         <div class="free-div">
                             <i class="fa fa-calendar-check-o color-blue" style="font-size: 72px"></i>
@@ -188,25 +155,6 @@
                             <h4>Gerencie de forma simples e rápida seus eventos 
                                 para que consiga ter tempo para planejar-los e organizar-los 
                                 melhor de acordo com sua rotina</h4>
-                        </div>
-
-                    </div>
-                    <div class="col-md-4 ">
-
-                        <div class="free-div">
-                            <i class="fa fa-bell color-blue" style="font-size: 72px"></i>
-                            <h3>Receber alertas</h3>
-                            <h4>Seja informado caso um evento esteja prestes a acontecer por e-mail</h4>
-                        </div>
-
-                    </div>
-                    <div class="col-md-4 ">
-
-                        <div class="free-div">
-                            <i class="fa fa-share-alt color-blue" style="font-size: 72px"></i>
-                            <h3>Compartilhar eventos</h3>
-                            <h4>Pesquise e adicione eventos públicos de seu interesse em seu calendário
-                                e compartilhe com quem desejar</h4>
                         </div>
 
                     </div>
@@ -222,11 +170,75 @@
                 <div class="row text-center">
                     <div class="col-md-8 col-md-offset-2">
                         <h1>COMO USAR</h1>
-                        <i class="fa fa-wrench color-blue" style="font-size: 24px"> EM CONSTRUÇÃO</i>
+                        <h4><strong>A utilização do site é bem simples e rápida. 
+                            Na segquência será mostrado como o site pode ser 
+                            utilizado.</strong></h4>
+                        <h2>CADASTRO DE USUÁRIOS</h2>
                         <h4>
-                            <strong>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                Curabitur nec nisl odio. Mauris vehicula at nunc id posuere.
-                            </strong>
+                            <ol>
+                                <strong>
+                                    <li>
+                                        Clique em 
+                                        <a href="cadastro.php"><i class="fa fa-user-plus"></i> CADASTRAR</a>
+                                        para entrar na tela de cadastro e 
+                                        preencha o formulário de cadastro.
+                                    </li>
+                                    <li>
+                                        No formulário há os campos de "Nome" que 
+                                        é o nome do usuário, "Login" que é o 
+                                        nome do usuário usado para logar, 
+                                        "Senha" e "Senha Novemente" onde é a 
+                                        senha escolhida pelo usuário sendo estas 
+                                        devendo ser iguais.
+                                    </li>
+                                    <li>
+                                        Por fim, ao apertar o botão "Cadastrar" 
+                                        o usuário inserido no banco de dados do 
+                                        site e redirecionado para a página de 
+                                        login.
+                                    </li>
+                                </strong>
+                            </ol>
+                        </h4>
+                        <h2>ACESSO AO CALENDÁRIO</h2>
+                        <h4>
+                            <ol>
+                                <strong>
+                                    <li>
+                                        O acesso ao calendário só é permitido 
+                                        aos usuarios cadastrados. <br>
+                                        Caso já tenha feito o cadastro, clique em 
+                                        <a href="login.php"><i class="fa fa-sign-in"></i> LOGIN</a>
+                                    </li>
+                                    <li>
+                                        Preencha os campos de "Login" e "Senha"
+                                        corretamente
+                                    </li>
+                                    <li>
+                                        E clique em 
+                                        <i class="fa fa-sign-in color-blue"> Entrar</i>
+                                        e serás redirecionado para seu calendario.
+                                    </li>
+                                </strong>
+                            </ol>
+                        </h4>
+                        <h2>ADICIONAR EVENTOS AO CALENDÁRIO</h2>
+                        <h4>
+                            <ol>
+                                <strong>
+                                    <li>
+                                        Clique no dia que deseja adicionar o 
+                                        evento. Ao fazer isso, uma caixa de 
+                                        dialogo irá aparecer.
+                                    </li>
+                                    <li>
+                                        Digite algo sobre o evento e 
+                                        clique em "OK". Assim os dados que foram 
+                                        digitados serão inseridos no banco de 
+                                        dados.
+                                    </li>
+                                </strong>
+                            </ol>
                         </h4>
                     </div>
 

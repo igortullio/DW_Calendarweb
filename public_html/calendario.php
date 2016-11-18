@@ -28,6 +28,9 @@
           <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
           <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
         <![endif]-->
+        <!-- Fav and touch icons -->
+        <link rel="shortcut icon" href="ico/calendar-icon-blue-18.png" />
+        <link rel="stylesheet" type="text/css" id="SL_Style" href="css/translator.css" />
 
         <!-- Importações do fullcalendar -->
         <link href='js/vendor/fullcalendar/fullcalendar.css' rel='stylesheet' />
@@ -110,15 +113,6 @@
         <!-- Fim Navegação -->
 
         <!-- Seção Calendário -->
-        <form action="/">
-            <div class="row text-right">
-                <div class="col-md-10" style="padding-bottom: 5px">
-                    <input id=tags name=tags placeholder="Pesquisa..." size=25 type=text>
-                    <input name=commit style="display:none;" type=submit value=Search>
-                    <br>
-                </div>
-            </div>
-        </form>
         <div id='calendar'></div>
         <!-- Fim Seção Calendário -->
 
