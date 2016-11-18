@@ -65,7 +65,7 @@
 						
                         if (title) {		
                             var start = moment(start).format();
-                            var end = moment(end).format();
+                            var end = moment(end).format();							
 						
 			                eventData = {
                                 title: title,
@@ -75,7 +75,7 @@
                             								
                             $.ajax({
                                 url: 'eventos\\addEvento.php',
-                                data: 'title='+ title+'&start='+ start +'&end='+ end+'$id_Usua=' +$_SESSION["id_Usua"] ,
+                                data: 'title='+ title+'&start='+ start +'&end='+ end ,
                                 type: "POST",								
                                 success: function () {
 									// Inserir aqui uma mensagem em caso de sucesso no envio da requisição HTTP

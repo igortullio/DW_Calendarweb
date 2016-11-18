@@ -1,12 +1,3 @@
-<?php
-
-	require_once "configuracao.php";
-	
-	session_start(); 
-	
-	ob_start();
-	
-?>
 
 <html lang="pt-br">
 
@@ -87,7 +78,7 @@
         <!-- Seção Login -->
         <div class="container">
 
-            <form method="POST" action="?go=entrar" form class="form-signin">
+            <form method="POST" action="autenticar.php" form class="form-signin">
 			
                 <h2 class="form-signin-heading">Login</h2>
 				<input type="text" name ="login1" id="login1" class="form-control" required="required" placeholder="Login" maxlength="15" />
@@ -150,28 +141,3 @@
 
 </html>
 
-<?php
-
-	if(@$_GET['go'] == 'entrar'){		
-		$login1 = $_POST['login1'];
-		$senha = $_POST['senha'];
-
-		$query = mysql_query("SELECT login, senha FROM usuario WHERE login='$login1' AND senha='$senha'") or die(mysql_error());
-		$query1 = mysql_num_rows($query);
-		if($query1 != 1){
-			echo "<script>alert('Login e/ou senha incorreto(s)'); history.back();</script>"; 
-		}else{
-			$query = mysql_query("SELECT id_Usua FROM usuario WHERE login='$login1' AND senha='$senha'") or die(mysql_error());
-			$id_Usua = mysql_fetch_assoc($query);
-			
-			//session_start();
-			header("Location: ./areaUsuario/calendario.php");
-			$_SESSION["login"] = $login;
-			$_SESSION["senha"] = $senha;
-			$_SESSION["id_Usua"] = $id_Usua;			
-						
-		}
-		
-	}
-
-?>

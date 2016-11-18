@@ -50,7 +50,7 @@
                         right: 'month'
                     },
 					
-		            events: 'eventos\\getEventos.php',
+		            events: [ ],
 					
                     navLinks: true, // can click day/week names to navigate views
 					
