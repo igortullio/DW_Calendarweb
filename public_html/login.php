@@ -88,10 +88,7 @@
                 <h2 class="form-signin-heading">Login</h2>
 				<input type="text" name ="login1" id="login1" class="form-control" required="required" placeholder="Login" maxlength="15" />
 				<input type="password" name ="senha" id="senha" class="form-control" required="required" placeholder="Senha" maxlength="15" />
-				
-                <label class="checkbox">
-                    <input value="remember-me" type="checkbox" /> Lembrar-me
-                </label>
+		
 				
                 <button class="btn btn-large btn-primary" type="submit">
                     <i class="fa fa-sign-in"></i> Entrar
