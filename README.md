@@ -1,6 +1,8 @@
 # DW_Calendarweb
-agrega valor ao usuario?
-visão de possíveis programadores
+## Descrição do projeto
+DW_CalendarWeb é um projeto de site implementado por Igor Túllio e Pedro Paul para auxiliar usuário do site a organizarem seu eventos de maneira simples. 
+## Contribuições
+o que cada um fez?
 ## Páginas do site
 oque cada pagina faz?
 Como funciona o site?
