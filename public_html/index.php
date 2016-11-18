@@ -9,7 +9,7 @@
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-        <meta name="description" content="Site de compatilhamento de calendarios" />
+        <meta name="description" content="Site oganização de calendários" />
         <meta name="author" content="Pedro Paul" />
         <!--[if IE]>
             <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -138,10 +138,10 @@
                         </p>
 
                         <p class="text-center">
-                            O CalendarWeb pretende ajudar as tanto pessoas que são 
+                            O CalendarWeb pretende ajudar as tantas pessoas que são 
                             organizadas quanto pessoas cronicamente 
                             desorganizadas a ter uma ferramenta simples para 
-                            administrar seu eventos.
+                            administrar seus eventos.
                         </p>
 
                     </div>
@@ -149,8 +149,10 @@
                     <div class="col-md-3">
                         <div class="about-div text-center">
                             <i class="fa fa-archive fa-4x color-blue"></i>
-                            <h3>Guarde seus eventos em seu calendario para 
-                                administra-los em um só lugar</h3>
+                            <h3>
+                                Guarde seus eventos em seu calendário para 
+                                administra-los em um só lugar
+                            </h3>
                         </div>
                     </div>
 
@@ -182,8 +184,10 @@
                         <div class="free-div">
                             <i class="fa fa-calendar color-blue" style="font-size: 72px"></i>
                             <h3>Visualize seu calendadio</h3>
-                            <h4>Faça o cadastro e veja todos os seus eventos 
-                                pelo navegador</h4>
+                            <h4>
+                                Faça o cadastro e veja todos os seus eventos 
+                                pelo navegador
+                            </h4>
                         </div>
 
                     </div>
@@ -192,9 +196,11 @@
                         <div class="free-div">
                             <i class="fa fa-calendar-check-o color-blue" style="font-size: 72px"></i>
                             <h3>Gerenciar seus eventos</h3>
-                            <h4>Gerencie de forma simples e rápida seus eventos 
-                                para que consiga ter tempo para planejar-los e organizar-los 
-                                melhor de acordo com sua rotina</h4>
+                            <h4>
+                                Gerencie de forma simples e rápida seus eventos 
+                                para que consiga ter tempo para planeja-los e organizá-los 
+                                melhor de acordo com sua rotina
+                            </h4>
                         </div>
 
                     </div>
@@ -211,7 +217,7 @@
                     <div class="col-md-8 col-md-offset-2">
                         <h1>COMO USAR</h1>
                         <h4><strong>A utilização do site é bem simples e rápida. 
-                            Na segquência será mostrado como o site pode ser 
+                            Na sequência será mostrado como o site pode ser 
                             utilizado.</strong></h4>
                         <h2>CADASTRO DE USUÁRIOS</h2>
                         <h4>
@@ -227,7 +233,7 @@
                                         No formulário há os campos de "Nome" que 
                                         é o nome do usuário, "Login" que é o 
                                         nome do usuário usado para logar, 
-                                        "Senha" e "Senha Novemente" onde é a 
+                                        "Senha" e "Senha Novamente" onde é a 
                                         senha escolhida pelo usuário sendo estas 
                                         devendo ser iguais.
                                     </li>
@@ -246,7 +252,7 @@
                                 <strong>
                                     <li>
                                         O acesso ao calendário só é permitido 
-                                        aos usuarios cadastrados. <br>
+                                        aos usuários cadastrados. <br>
                                         Caso já tenha feito o cadastro, clique em 
                                         <a href="login.php"><i class="fa fa-sign-in"></i> LOGIN</a>
                                     </li>
@@ -257,7 +263,7 @@
                                     <li>
                                         E clique em 
                                         <i class="fa fa-sign-in color-blue"> Entrar</i>
-                                        e serás redirecionado para seu calendario.
+                                        e serás redirecionado para seu calendário.
                                     </li>
                                 </strong>
                             </ol>
