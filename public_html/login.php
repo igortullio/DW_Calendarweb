@@ -32,11 +32,7 @@
                     <![endif]-->
 
         <!-- Fav and touch icons -->
-        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://getbootstrap.com/2.3.2/assets/ico/apple-touch-icon-144-precomposed.png" />
-        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="http://getbootstrap.com/2.3.2/assets/ico/apple-touch-icon-114-precomposed.png" />
-        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="http://getbootstrap.com/2.3.2/assets/ico/apple-touch-icon-72-precomposed.png" />
-        <link rel="apple-touch-icon-precomposed" href="http://getbootstrap.com/2.3.2/assets/ico/apple-touch-icon-57-precomposed.png" />
-        <link rel="shortcut icon" href="http://getbootstrap.com/2.3.2/assets/ico/favicon.png" />
+        <link rel="shortcut icon" href="ico/calendar-icon-blue-18.png" />
         <link rel="stylesheet" type="text/css" id="SL_Style" href="css/translator.css" />
     </head>
 
@@ -84,9 +80,6 @@
 				<input type="text" name ="login1" id="login1" class="form-control" required="required" placeholder="Login" maxlength="15" />
 				<input type="password" name ="senha" id="senha" class="form-control" required="required" placeholder="Senha" maxlength="15" />
 				
-                <label class="checkbox">
-                    <input value="remember-me" type="checkbox" /> Lembrar-me
-                </label>
 				
                 <button class="btn btn-large btn-primary" type="submit">
                     <i class="fa fa-sign-in"></i> Entrar
