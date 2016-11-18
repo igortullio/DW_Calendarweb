@@ -3,7 +3,7 @@
 
 
 
-CREATE TABLE Usuario (
+CREATE TABLE usuario (
 id_Usua int(11) AUTO_INCREMENT PRIMARY KEY,
 nome varchar(30) NOT NULL,
 login varchar(15) NOT NULL,

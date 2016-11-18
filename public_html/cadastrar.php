@@ -25,8 +25,10 @@
 		}else{
 			mysql_query("INSERT INTO usuario (nome, login, senha) values ('$nome','$login1','$senha')");
 			echo "<script>alert('Usuário cadastrado com sucesso.');</script>";
-			echo "<meta http-equiv='refresh'>";
+			echo "<meta HTTP-EQUIV='refresh' CONTENT='0;URL=login.php'>";
 		}
 	}
+	
+	
 
 ?>
