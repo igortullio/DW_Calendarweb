@@ -29,8 +29,8 @@
           <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
         <![endif]-->
         <!-- Fav and touch icons -->
-        <link rel="shortcut icon" href="ico/calendar-icon-blue-18.png" />
-        <link rel="stylesheet" type="text/css" id="SL_Style" href="css/translator.css" />
+        <link rel="shortcut icon" href="../ico/calendar-icon-blue-18.png" />
+        <link rel="stylesheet" type="text/css" id="SL_Style" href="../css/translator.css" />
 
         <!-- Importações do fullcalendar -->
         <link href='../js/vendor/fullcalendar/fullcalendar.css' rel='stylesheet' />

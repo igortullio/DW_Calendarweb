@@ -29,8 +29,8 @@
           <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
         <![endif]-->
         <!-- Fav and touch icons -->
-        <link rel="shortcut icon" href="ico/calendar-icon-blue-18.png" />
-        <link rel="stylesheet" type="text/css" id="SL_Style" href="css/translator.css" />
+        <link rel="shortcut icon" href="../ico/calendar-icon-blue-18.png" />
+        <link rel="stylesheet" type="text/css" id="SL_Style" href="../css/translator.css" />
     </head>
 
     <body>
@@ -64,6 +64,42 @@
         </nav>
         <!-- Fim Navegação -->
 
+       <!--Seção do Cabeçalho  -->
+        <div class="container" id="home">
+            <div class="row text-center">
+
+                <div class="col-sm-4 head-main">
+
+                    <a href="#about">
+                        <i class="fa fa-info-circle color-blue "></i>
+                    </a>
+                    <h3> <a href="#about">SOBRE</a></h3>
+
+                </div>
+
+                <div class="col-sm-4 head-main">
+
+                    <a href="#services">
+                        <i class="fa fa-cubes color-blue"></i>
+                    </a>
+                    <h3>
+                        <a href="#services">SERVIÇOS</a>
+                    </h3>
+
+                </div>
+
+                <div class="col-sm-4 head-main">
+
+                    <a href="#howuse">
+                        <i class="fa fa-calendar color-blue"></i>
+                    </a>
+                    <h3> <a href="#howuse">COMO USAR</a></h3>
+
+                </div>
+            </div>
+        </div>
+        <!--Fim Seção do Cabeçalho -->
+
         <!--Seção SOBRE-->
         <section class="for-full-back color-white" id="about">
             <div class="container">
@@ -86,22 +122,18 @@
 
                     <div class="col-md-6 ">
                         <p class="text-center">
-                            Muitas pessoas costumam planejar ir a eventos para 
-                            entretenimento, precisa ir a reuniões ou 
-                            simplesmente querem se lembrar de algum evento que 
-                            irá acontecer ou já aconteceu.
-                            Outras pessoas costumam não consegui ter uma noção 
-                            do tempo exata, acabam se atrasando ou falta 
-                            reuniões, usa nenhum ou vários calendários, tem 
-                            dificuldade encontrar coisas, costumam perder prazos 
-                            e perde agenda frequentemente.
+                            Existem pessoas que costumam ir a eventos de entretenimento, 
+							precisam ir a reuniões ou simplesmente querem se lembrar 
+							de algo que irá acontecer ou já aconteceu. Já outras pessoas 
+							costumam não conseguir ter uma noção de tempo e usam nenhum 
+							ou vários calendários para tentar amenizar essa bagunça de 
+							horários. 
                         </p>
 
                         <p class="text-center">
-                            O CalendarWeb pretende ajudar as tanto pessoas que são 
-                            organizadas quanto pessoas cronicamente 
-                            desorganizadas a ter uma ferramenta simples para 
-                            administrar seu eventos.
+                            O CalendarWeb pretende ajudar todas essas pessoas, para que 
+							assim consigam em um só lugar colocar todos os seus eventos e 
+							datas de forma organizada e acessível.
                         </p>
 
                     </div>
@@ -109,8 +141,8 @@
                     <div class="col-md-3">
                         <div class="about-div text-center">
                             <i class="fa fa-archive fa-4x color-blue"></i>
-                            <h3>Guarde seus eventos em seu calendario para 
-                                administra-los em um só lugar</h3>
+                            <h3>Guarde seus eventos em seu calendário para 
+                                administrá-los em um só lugar</h3>
                         </div>
                     </div>
 
@@ -129,7 +161,7 @@
                     <div class="col-md-8 col-md-offset-2">
                         <h1>Serviços</h1>
                         <h4>
-                            <strong>Nossos serviços dão a possibilidade de você 
+                            <strong>Nossos serviços dão a possibilidade de você
                             </strong>
                         </h4>
                     </div>
@@ -141,7 +173,7 @@
 
                         <div class="free-div">
                             <i class="fa fa-calendar color-blue" style="font-size: 72px"></i>
-                            <h3>Visualize seu calendadio</h3>
+                            <h3>Visualizar seu calendádio</h3>
                             <h4>Faça o cadastro e veja todos os seus eventos 
                                 pelo navegador</h4>
                         </div>
@@ -153,8 +185,8 @@
                             <i class="fa fa-calendar-check-o color-blue" style="font-size: 72px"></i>
                             <h3>Gerenciar seus eventos</h3>
                             <h4>Gerencie de forma simples e rápida seus eventos 
-                                para que consiga ter tempo para planejar-los e organizar-los 
-                                melhor de acordo com sua rotina</h4>
+                                para que consiga ter tempo para planeja-los e organizá-los 
+                                de acordo com sua rotina</h4>
                         </div>
 
                     </div>
@@ -171,8 +203,7 @@
                     <div class="col-md-8 col-md-offset-2">
                         <h1>COMO USAR</h1>
                         <h4><strong>A utilização do site é bem simples e rápida. 
-                            Na segquência será mostrado como o site pode ser 
-                            utilizado.</strong></h4>
+                            </strong></h4>
                         <h2>CADASTRO DE USUÁRIOS</h2>
                         <h4>
                             <ol>
@@ -181,21 +212,16 @@
                                         Clique em 
                                         <a href="cadastro.php"><i class="fa fa-user-plus"></i> CADASTRAR</a>
                                         para entrar na tela de cadastro e 
-                                        preencha o formulário de cadastro.
+                                        criar seu cadastro conosco através do formulário.
                                     </li>
                                     <li>
-                                        No formulário há os campos de "Nome" que 
-                                        é o nome do usuário, "Login" que é o 
-                                        nome do usuário usado para logar, 
-                                        "Senha" e "Senha Novemente" onde é a 
-                                        senha escolhida pelo usuário sendo estas 
-                                        devendo ser iguais.
+                                        No formulário digite os dados solicitados, como um nome de usuário, 
+										que será sua forma de entrar em seu calendário. 
                                     </li>
                                     <li>
-                                        Por fim, ao apertar o botão "Cadastrar" 
-                                        o usuário inserido no banco de dados do 
-                                        site e redirecionado para a página de 
-                                        login.
+                                        Por fim, ao apertar "Cadastrar" 
+                                        o usuário é inserido no banco de dados e 
+										redirecionado para a página de login.
                                     </li>
                                 </strong>
                             </ol>
@@ -205,14 +231,14 @@
                             <ol>
                                 <strong>
                                     <li>
-                                        O acesso ao calendário só é permitido 
+                                        A adição de eventos no calendário só é permitido 
                                         aos usuarios cadastrados. <br>
                                         Caso já tenha feito o cadastro, clique em 
                                         <a href="login.php"><i class="fa fa-sign-in"></i> LOGIN</a>
                                     </li>
                                     <li>
                                         Preencha os campos de "Login" e "Senha"
-                                        corretamente
+                                        corretamente.
                                     </li>
                                     <li>
                                         E clique em 
@@ -227,15 +253,16 @@
                             <ol>
                                 <strong>
                                     <li>
-                                        Clique no dia que deseja adicionar o 
-                                        evento. Ao fazer isso, uma caixa de 
-                                        dialogo irá aparecer.
+                                        Clique no dia, ou selecione vários dias, 
+										que deseja adicionar o evento evento. Ao fazer 
+										isso, uma caixa de dialogo irá aparecer.
                                     </li>
                                     <li>
-                                        Digite algo sobre o evento e 
-                                        clique em "OK". Assim os dados que foram 
-                                        digitados serão inseridos no banco de 
-                                        dados.
+                                        Digite um título para o evento e 
+                                        clique em "OK".
+                                    </li>
+									<li>
+                                        Pronto, seu evento já estará cadastrado!
                                     </li>
                                 </strong>
                             </ol>
