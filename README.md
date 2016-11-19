@@ -20,9 +20,9 @@ Contém o código em PHP que faz a conexão com o banco de dados.
 #### ``public_html/login.php``
 É a página de requisição de início da sessão do usuário cadastrado no site por meio de seu *login* e *senha*.
 #### ``public_html/cadastrar.php``
-Contém o código em PHP que insere o usuário no banco de dados. Este código é chamado na página ``cadastro.php``.
+Contém o código em PHP que insere o usuário no banco de dados. Este código é chamado na página ``public_html/cadastro.php``.
 #### ``public_html/autenticar.php``
-Contém o código em PHP que verifica se o usuário que solicita entrar em seu calendário realmente está cadastrado. Este código é chamado na página ``login.php``.
+Contém o código em PHP que verifica se o usuário que solicita entrar em seu calendário realmente está cadastrado. Este código é chamado na página ``public_html/login.php``.
 ### Páginas da área do usuário
 #### ``public_html/areaUsuario/index.php``
 É a página de apresentação do site que informa ao usuário logado no site, as funcionalidades existentes e de como usá-las.
